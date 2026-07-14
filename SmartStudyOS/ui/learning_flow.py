@@ -623,7 +623,7 @@ class LearningFlow(QWidget):
 
         diag_summary = ""
         if d_report and hasattr(d_report, 'findings') and d_report.findings:
-            diag_summary = f"诊断发现 {len(d_report.findings)} 个错误模式" \
+            diag_summary = f"诊断发现 {len(d_report.findings)} 个错误模式" \
                            f"  ·  可信度 {d_report.confidence*100:.0f}%"
 
         self.lbl_reward_detail.setText(
